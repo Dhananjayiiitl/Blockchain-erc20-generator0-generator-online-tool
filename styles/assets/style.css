@@ -530,7 +530,7 @@ div#preloader {
 }
 
 .money-send {
-  margin: 30px 30px 0px 90px;
+  margin: 30px 30px 0px 0px;
   position: relative;
   z-index: 1;
 }
@@ -747,7 +747,6 @@ button.cale-btn:hover {
 }
 
 .swap-set {
-  display: block;
   margin-bottom: 30px;
 }
 
@@ -1653,8 +1652,9 @@ button.cale-btn:hover {
 }
 
 .single-brand-item {
-  width: 160px;
+  width: 100%;
   height: auto;
+  text-align: center;
 }
 
 /*----------------------------------------*/
@@ -3026,8 +3026,30 @@ span.email-notes {
   margin-bottom: 30px;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #0d102d;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #131740;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #191e53;
+}
+
 .table-inner {
   position: relative;
+  overflow-x: hidden;
 }
 
 .table-inner table {
